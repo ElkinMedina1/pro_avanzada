@@ -19,12 +19,20 @@ def main():
             'edad': 20,
             'estado': 'activo',
             'materias': ['arquitectura', 'compiladores', 'analisis'],
-            'notas': {'arquitectura': 3.5, 'compiladores': 4.0, 'analisis': 4.5}
+            'notas': {'arquitectura': 2.5, 'compiladores': 3.0, 'analisis': 1.5}
         }
     ]
     for estudiante in estudiantes:
         nombre = estudiante['nombre']
+        materias = estudiante['materias']
         notas = estudiante['notas']
+        if len(materias) < 3:
+            print(f'Error: El estudiante {nombre} debe tener al menos 3 materias.')
+            continue
+        if not all(0.0 <= nota <= 5.0 for nota in notas.values()):
+            print(f'Error: Las notas del estudiante {nombre} deben estar entre 0.0 y 5.0.')
+            continue
+        
         promedio = sum(notas.values()) / len(notas)
         mejor_materia = max(notas, key=notas.get)
         peor_materia = min(notas, key=notas.get)
@@ -33,11 +41,11 @@ def main():
         print(f'Estudiante: {nombre}')  
         print(f'Promedio general de notas: {promedio:.2f}')
         print(f'Materia con mejor nota: {mejor_materia} ({notas[mejor_materia]})')
-        print(f'Materia con peor nota: {peor_materia} ({notas[ peor_materia]})')
+        print(f'Materia con peor nota: {peor_materia} ({notas[peor_materia]})')
         print(f'Estado: {estado_aprobacion}')
         print('-----------------------------')
 
 if __name__ == "__main__":    
     main()
-        
-  
+
+

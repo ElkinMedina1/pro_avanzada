@@ -1,11 +1,4 @@
 def main():
-    '''Crea una función que reciba: nombre, edad y correo. El programa debe hacer
-las siguientes validaciones:
-• Nombre mínimo 3 caracteres
-• Edad (entre 0 y 120)
-• Correo debe contener @, .com, edu.co,
-Si algún dato es inválido, debe generar un mensaje claro y volver a pedir el dato.
-Posteriormente almacene dicha información en una lista.'''
     datos_usuario = []
     
     while True:
