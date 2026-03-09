@@ -11,7 +11,7 @@ Un estudiante aprueba si su promedio es 3.0 o más.
 ## Cómo correrlo
 Abre la terminal, ve a la carpeta donde está el archivo y escribe:
 
-```bash
+``bash
 python ejercicio_1.py
 
 # Cálculo de Impuesto y Descuento en Python
@@ -22,7 +22,7 @@ Este programa en Python  pide un valor monetario al usuario. Calcula un impuesto
 ## Cómo correrlo
 Abre la terminal, ve a la carpeta donde está el archivo y escribe:
 
-```bash
+``bash
 python ejercicio_2.py
 # Serie de Fibonacci en Python
 
@@ -32,7 +32,7 @@ Este programa que pide un número de inicio y cuántas iteraciones quieres. Gene
 ## Cómo correrlo
 Abre la terminal, ve a la carpeta donde está el archivo y escribe:
 
-```bash
+``bash
 python ejercicio_3.py
 # Menú Interactivo en Python
 
@@ -51,7 +51,7 @@ El programa también valida las entradas del usuario, por ejemplo, asegurando qu
 ## Cómo correrlo
 Abre la terminal, ve a la carpeta donde está el archivo y escribe:
 
-```bash
+``bash
 python ejercicio_4.py
 # Validación de Datos de Usuario en Python
 
@@ -63,5 +63,5 @@ Si algún dato está incorrecto, el programa lo vuelve a pedir. Al final, guarda
 ## Cómo correrlo
 Abre la terminal, ve a la carpeta donde está el archivo y escribe:
 
-```bash
+``bash
 python ejercicio_5.py      
